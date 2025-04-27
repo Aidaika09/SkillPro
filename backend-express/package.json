@@ -15,5 +15,8 @@
     "url": "https://github.com/Aidaika09/SkillPro/issues"
   },
   "homepage": "https://github.com/Aidaika09/SkillPro#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }

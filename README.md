@@ -1,6 +1,7 @@
 # SkillPro - A Modern Learning Platform
 
 **Overview**
+
 SkillSpring is a web-based learning platform that allows instructors to create and manage online courses while enabling students to enroll, track progress, and interact in real-time. It aims to provide a simple but scalable structure for content delivery, user management, and learner engagement.
 
 **Objectives**

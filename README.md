@@ -17,4 +17,4 @@ SkillPro is a web-based learning platform that allows instructors to create and 
 - Real-time chat system for Q&A
 - REST API for course and user data
 
-👉 [Access SkillPro here](https://aidaika09.github.io/skillpro/)
+👉 [Access SkillPro here](https://aidaika09.github.io/SkillPro/)

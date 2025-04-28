@@ -1,0 +1,27 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: reverse_proxy
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/templates:/etc/nginx/templates
+      - ./container_logs/nginx:/var/log/nginx
+      - ./nginx/public_html:/usr/share/nginx/html
+    
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_PORT=80
+      - NGINX_PROXY=http://application:3002
+    depends_on:
+      - application
+    restart: always
+
+  application:
+    image: skillpro
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
+    command: "npm start"

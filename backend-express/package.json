@@ -1,22 +1,17 @@
 {
-  "name": "backend-express",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "helloworld",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aidaika09/SkillPro.git"
-  },
-  "author": "Group 15",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Aidaika09/SkillPro/issues"
-  },
-  "homepage": "https://github.com/Aidaika09/SkillPro#readme",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.3"
   }
 }

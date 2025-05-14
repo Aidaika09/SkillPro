@@ -1,0 +1,29 @@
+{{!-- Layout: main.handlebars --}}
+<header>
+  <h1>{{header}}</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/dashboard">Dashboard</a>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>{{coursesHeading}}</h2>
+
+    {{#each courses}}
+      <div class="course-card">
+        <div class="course-title">{{emoji}} {{name}}</div>
+        <p>{{nextLesson}}</p>
+        <div class="progress-bar">
+          <span style="width: {{progress}}%"></span>
+        </div>
+      </div>
+    {{/each}}
+
+    <p><a href="#">View All Courses</a></p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 {{footerText}}</p>
+</footer>

@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Lists</title>
-</head>
-<body>
-  <h1>Project Lists</h1>
+<h1>Project Lists</h1>
 
-  <h2>All Projects:</h2>
-  <ul>
-    {{#each projects}}
-      <li>
-        <strong>{{this.name}}</strong> - {{this.description}} ({{this.status}})
-      </li>
-    {{/each}}
-  </ul>
+<h2>All Projects:</h2>
+<ul>
+  {{#each projects}}
+    <li>
+      <strong>{{this.name}}</strong> - {{this.description}} ({{this.status}})
+    </li>
+  {{/each}}
+</ul>
 
-  <h2>Completed Projects:</h2>
-  <ul>
-    {{#each completedProjects}}
-      <li>
-        <strong>{{this.name}}</strong> - {{this.description}} ({{this.status}})
-      </li>
-    {{/each}}
-  </ul>
-</body>
-</html>
+<h2>Completed Projects:</h2>
+<ul>
+  {{#each completedProjects}}
+    <li>
+      <strong>{{this.name}}</strong> - {{this.description}} ({{this.status}})
+    </li>
+  {{/each}}
+</ul>

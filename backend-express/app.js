@@ -73,7 +73,7 @@ app.get('/dashboard', (req, res) => {
   });
 });
 
-
+// Trying Out Handlebars
 /*
 app.get('/projects', (req, res) => {
   // Example data for projects

@@ -6,7 +6,7 @@ var { engine } = require('express-handlebars');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+const fs = require('fs');
 
 //var indexRouter = require('./routes/index');
 //var usersRouter = require('./routes/users');
@@ -38,10 +38,10 @@ app.listen(PORT, () => {
 //routes for html static pages integrated into handlebars
 //Home Page
 app.get('/', (req, res) => {
-  res.render('index', { 
-    title: 'SkillPro', 
-    mainHeading: 'Your Personalized Learning Platform', 
-    mainDescription: 'Track your enrolled courses and continue your learning journey effortlessly.', 
+  res.render('index', {
+    title: 'SkillPro',
+    mainHeading: 'Your Personalized Learning Platform',
+    mainDescription: 'Track your enrolled courses and continue your learning journey effortlessly.',
     newReleaseTitle: 'New Release Coming Soon!',
     newReleaseDescription: 'We’re excited to announce a brand new course on Advanced Web Development, launching soon! Stay tuned for more updates, and be the first to try it out when it’s released.',
   });
@@ -50,10 +50,10 @@ app.get('/', (req, res) => {
 
 //About Page
 app.get('/about', (req, res) => {
-  res.render('about', { 
-    title: 'SkillPro', 
+  res.render('about', {
+    title: 'SkillPro',
     description1: 'SkillPro is an intuitive learning platform designed to help users stay focused on their enrolled courses.',
-    description2: 'We aim to make learning structured, accessible, and tailored to each user’s needs.' 
+    description2: 'We aim to make learning structured, accessible, and tailored to each user’s needs.'
   });
 });
 
@@ -96,12 +96,27 @@ app.get('/projects', (req, res) => {
 
 // Login page
 app.get('/login', (req, res) => {
-  res.render('layouts/login', { title: 'Login' });
+  res.render('login', { title: 'Login' });
 });
 
 // Register page
 app.get('/register', (req, res) => {
-  res.render('layouts/register', { title: 'Register' });
+  res.render('register', { title: 'Register' });
+});
+
+// Route for course list
+app.get("/course_list", (req, res) => {
+  // Load the data from the 'courses.json' file in the "data" folder
+  fs.readFile(path.join(__dirname, 'data', 'courses.json'), 'utf8', (err, data) => {
+    if (err) {
+      console.error("Error reading the JSON file", err);
+      return res.status(500).send("Internal Server Error");
+    }
+
+    // Parse the data and render the page with the data
+    const jsonData = JSON.parse(data); // Parse the JSON string to an object
+    res.render("course_list", jsonData); // Render the Handlebars template with the JSON data
+  });
 });
 
 // catch 404 and forward to error handler

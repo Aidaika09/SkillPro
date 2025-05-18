@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection</title>
+  <style>
+  /* STYLING MADE WITH CHATGPT!! */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #4a90e2;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect: change button color and slightly enlarge it */
+    li button:hover {
+      background-color: #357ab7;
+      transform: scale(1.1);  /* This enlarges the button slightly */
+    }
+    .signature {
+      margin-top: 30px;
+      text-align: center;
+      color: #888;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to the Course Selection!</h1>
+
+  <p>Hi!</p>
+
+  <p>Choose which course to enroll:</p>
+
+  <ul>
+    <li>Web Technology <button onclick="enroll('Web Technology')">Enroll</button></li>
+    <li>Game Engines <button onclick="enroll('Game Engines')">Enroll</button></li>
+    <li>Game Programming <button onclick="enroll('Game Programming')">Enroll</button></li>
+    <li>Networking <button onclick="enroll('Networking')">Enroll</button></li>
+    <li>Informatics 3 <button onclick="enroll('Informatics 3')">Enroll</button></li>
+    <li>Math 2 <button onclick="enroll('Math 2')">Enroll</button></li>
+  </ul>
+
+  <p class="signature">
+    Signed,<br>
+    HTW-Berlin 🦄
+  </p>
+
+  <script>
+    function enroll(courseName) {
+      alert(`You have enrolled in ${courseName}!`);
+    }
+  </script>
+</body>
+</html>

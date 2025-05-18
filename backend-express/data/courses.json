@@ -1,0 +1,13 @@
+{
+    "event_name": "Course Selection",
+    "student_name": "Student XYZ",
+    "courses": [
+      "Web Technology",
+      "Game Engines",
+      "Game Programming",
+      "Networking",
+      "Informatics 3",
+      "Math 2"
+    ],
+    "uni_name": "HTW-Berlin"
+  }

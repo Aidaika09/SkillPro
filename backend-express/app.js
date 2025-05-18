@@ -66,7 +66,6 @@ app.get('/dashboard', (req, res) => {
   ];
 
   res.render('dashboard', {
-    header: 'Your Dashboard',
     coursesHeading: 'Enrolled Courses',
     courses: courses,
     footerText: 'Learn. Grow. Succeed.'
@@ -94,6 +93,16 @@ app.get('/projects', (req, res) => {
     completedProjects: completedProjects, // List of completed projects
   });
 });*/
+
+// Login page
+app.get('/login', (req, res) => {
+  res.render('layouts/login', { title: 'Login' });
+});
+
+// Register page
+app.get('/register', (req, res) => {
+  res.render('layouts/register', { title: 'Register' });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

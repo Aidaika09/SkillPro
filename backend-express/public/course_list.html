@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Selection (Static Page)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Course Selection!</h1>
+  <p class="note">(This is the static version of the page)</p>
+
+  <p>Hi Student XYZ!</p>
+
+  <p>Choose which Course to enroll:</p>
+
+  <ul>
+      <li>
+        Web Technology
+        <button onclick="enroll('Web Technology')">Enroll</button>
+      </li>
+      <li>
+        Game Engines
+        <button onclick="enroll('Game Engines')">Enroll</button>
+      </li>
+      <li>
+        Game Programming
+        <button onclick="enroll('Game Programming')">Enroll</button>
+      </li>
+      <li>
+        Networking
+        <button onclick="enroll('Networking')">Enroll</button>
+      </li>
+      <li>
+        Informatics 3
+        <button onclick="enroll('Informatics 3')">Enroll</button>
+      </li>
+      <li>
+        Math 2
+        <button onclick="enroll('Math 2')">Enroll</button>
+      </li>
+  </ul>
+
+  <p class="signature">
+    Signed,<br>
+    HTW-Berlin
+  </p>
+
+  <script>
+    function enroll(courseName) {
+      alert("You clicked enroll on " + courseName + " (static page, no action taken)");
+    }
+  </script>
+</body>
+</html>

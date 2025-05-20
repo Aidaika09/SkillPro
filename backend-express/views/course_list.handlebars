@@ -1,88 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ event_name }} (Static Page)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      padding: 40px;
-      max-width: 700px;
-      margin: auto;
-    }
+<h1>Welcome to the {{event_name}}!</h1>
 
-    h1 {
-      color: #333;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 8px;
-    }
+  <p>Hi {{student_name}}!</p>
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #ddd;
-    }
-
-    button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    .note {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .signature {
-      margin-top: 30px;
-      font-style: italic;
-      text-align: center;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <h1>Welcome to the {{ event_name }}!</h1>
-  <p class="note">(This is the static version of the page)</p>
-
-  <p>Hi {{ student_name }}!</p>
-
-  <p>Choose which Course to enroll:</p>
+  <p>Choose which course to enroll:</p>
 
   <ul>
     {{#each courses}}
       <li>
-        {{ this }}
-        <button onclick="enroll('{{ this }}')">Enroll</button>
+        {{this}} <button onclick="enroll('{{this}}')">Enroll</button>
       </li>
     {{/each}}
   </ul>
 
   <p class="signature">
     Signed,<br>
-    {{ uni_name }}
+    {{uni_name}} 🦄
   </p>
 
   <script>
     function enroll(courseName) {
-      alert("You clicked enroll on " + courseName + " (static page, no action taken)");
+      alert(`You have enrolled in ${courseName}!`);
     }
   </script>
 </body>

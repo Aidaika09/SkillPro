@@ -40,10 +40,12 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'SkillPro',
+    headerTitle: 'Welcome to SkillPro',
     mainHeading: 'Your Personalized Learning Platform',
     mainDescription: 'Track your enrolled courses and continue your learning journey effortlessly.',
     newReleaseTitle: 'New Release Coming Soon!',
     newReleaseDescription: 'We’re excited to announce a brand new course on Advanced Web Development, launching soon! Stay tuned for more updates, and be the first to try it out when it’s released.',
+    footerText: '© 2025 SkillPro. All rights reserved.',
   });
 });
 
@@ -52,8 +54,10 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'SkillPro',
+    headerTitle: 'About SkillPro',
     description1: 'SkillPro is an intuitive learning platform designed to help users stay focused on their enrolled courses.',
-    description2: 'We aim to make learning structured, accessible, and tailored to each user’s needs.'
+    description2: 'We aim to make learning structured, accessible, and tailored to each user’s needs.',
+    footerText: '© 2025 SkillPro. Empowering learners every step of the way.',
   });
 });
 
@@ -66,9 +70,10 @@ app.get('/dashboard', (req, res) => {
   ];
 
   res.render('dashboard', {
+    headerTitle: 'Your Dashboard',
     coursesHeading: 'Enrolled Courses',
     courses: courses,
-    footerText: 'Learn. Grow. Succeed.'
+    footerText: '© 2025 SkillPro.Learn. Grow. Succeed.'
   });
 });
 
@@ -96,12 +101,12 @@ app.get('/projects', (req, res) => {
 
 // Login page
 app.get('/login', (req, res) => {
-  res.render('login', { title: 'Login' });
+  res.render('login', { title: 'Login', headerTitle: 'Login to Your Account',footerText: '© 2025 SkillPro. All rights reserved.' });
 });
 
 // Register page
 app.get('/register', (req, res) => {
-  res.render('register', { title: 'Register' });
+  res.render('register', { title: 'Register', headerTitle: 'Create Your Account',footerText: '© 2025 SkillPro. All rights reserved.' });
 });
 
 // Route for course list

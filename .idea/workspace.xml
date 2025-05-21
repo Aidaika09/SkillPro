@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f48097-d7ea-4cf9-9d90-89bc3f37fa0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-express/backup-html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-express/backup-html/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-express/views/layouts/login.handlebars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-express/views/layouts/register.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-express/backup-html/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/backup-html/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/backup-html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/backup-html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-express/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-express/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/public/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/public/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/public/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/public/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/public/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/views/about.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/about.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/views/dashboard.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/dashboard.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/views/index.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/index.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-express/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/layouts/main.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/views/login.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/login.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-express/views/register.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/backend-express/views/register.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
